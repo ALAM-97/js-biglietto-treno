@@ -8,15 +8,50 @@
         <title>Biglietti del treno</title>
     </head>
     <body>
-        
+
         <header>
-
+            <h1>TICKET PRICE</h1>
         </header>
-
+        
         <main>
-
-        </main>
+            <div class="train-ticket-container">
+                <div class="travel-info">
+                    <h2>Scopri i nostri super sconti</h2>
+                </div>
+                <div class="discount-info">
+                    <div class="under-18">Se hai meno di 18 anni <br> avrai uno sconto del 20%</div>
+                    <div class="over-65">Se hai più di 65 anni <br> avrei uno sconto del 40%</div>
+                </div>
+                <div class="travel-ideas">
+                    <h2>Ecco alcune mete che ti consigliamo</h2>
+                </div>
+                <div class="travel-cities">
+                    <div class="ideas-img">
+                        <img src="img/milano.jpg" alt="">
+                        <p>Milano: distanza 574,5 KM <br> (partendo da Roma)</p>
+                    </div>
+                    <div class="ideas-img">
+                        <img src="img/napoli.jpg" alt="">
+                        <p>Napoli: distanza 226,7 KM <br> (partendo da Roma)</p>
+                    </div>
+                    <div class="ideas-img venezia-img">
+                        <img src="img/venezia.jpg" alt="">
+                        <p>Venezia: distanza 526,4 KM <br> (partendo da Roma)</p>
+                    </div>
+                </div>
+                
+                <div class="train-ticket-text">
+                    <h3>CALCOLA IL PREZZO DEL TUO BIGLIETTO!</h3>
+                    <button onclick="calcoloCostoBiglietto()">CLICCAMI</button>
+                </div>
+                <div class="price-box">
+                    <div id="your-price" class="price">
+                        
+                    </div>
+                </div>
+            </div>
 
         <script src="js/script.js"></script>
     </body>
+
 </html>

@@ -3,3 +3,192 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: #2941ab;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(27, 27, 27);
+    padding: 30px 0; 
+    border-bottom: 3px solid red;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 3rem;
+}
+
+/* MAIN */
+
+.train-ticket-container {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: auto;
+}
+.travel-info,
+.travel-ideas {
+    font-size: 2.5rem;
+    color: red;
+    margin-top: 40px;
+    text-align: center;
+}
+.travel-ideas {
+    font-size: 2rem;
+}
+.ideas-img {
+    margin: 30px 10px 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: calc((100% / 3) - 20px);
+}
+.ideas-img img {
+    width: 100%;
+}
+.ideas-img p {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #fff;
+    margin-top: 20px;
+}
+.travel-cities {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+    width: 100%;
+}
+.discount-info {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.under-18,
+.over-65 {
+    margin: 30px 20px 0 20px;
+    width: 20%;
+    padding: 20px 15px;
+    background-color: rgb(27, 27, 27);
+    border: 2px solid red;
+    text-align: center;
+    color: #fff;
+    width: calc(50% - 40px);
+}
+.train-ticket-text {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+h3 {
+    text-align: center;
+    font-size: 2rem;
+    color: red;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+button {
+    padding: 10px 20px;
+    background-color: rgb(27, 27, 27);
+    border: 2px solid red;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.3rem;
+    cursor: pointer;
+    margin: auto;
+}
+
+.price-box {
+    display: flex;
+    margin: auto;
+    margin-bottom: 50px;
+    justify-content: center;
+    width: 20%;
+    padding: 50px 0;
+    background-color: rgb(27, 27, 27);
+    margin-top: 40px;
+    border-radius: 40px;
+    border: 3px solid red;
+}
+
+.price {
+    color: white;
+    font-size: 2.2rem;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 830px) {
+    header {
+        width: 100%;
+    }
+    header h1 {
+        font-size: 1.8rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+        margin-top: 60px;
+    }
+    .price-box {
+        width: 60%;
+    }
+    .price {
+        font-size: 1.7rem;
+    }
+    .travel-ideas {
+    font-size: 1.7rem;
+    }
+    .venezia-img {
+        margin: 30px auto;
+    }
+    .ideas-img {
+        width: calc(50% - 20px);
+        justify-content: center;
+    }
+    .ideas-img p {
+        text-align: center;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    header {
+        width: 100%;
+    }
+    header h1 {
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1.3rem;
+        margin-top: 60px;
+    }
+    .price-box {
+        width: 70%;
+    }
+    .price {
+        font-size: 1.2rem;
+    }
+    .travel-ideas {
+    font-size: 1.7rem;
+    }
+    .ideas-img {
+        width: 100%;
+        justify-content: center;
+    }
+    .ideas-img p {
+        text-align: center;
+        font-size: 1rem;
+    }
+    .under-18,
+    .over-65 {
+        width: 100%;
+    }
+}
