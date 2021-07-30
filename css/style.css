@@ -53,6 +53,7 @@ header h1 {
 }
 .ideas-img img {
     width: 100%;
+    border-radius: 10px;
 }
 .ideas-img p {
     text-align: center;
