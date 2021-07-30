@@ -7,15 +7,14 @@ function calcoloCostoBiglietto() {
     var costoBiglietto = kmViaggio * 0.21;
     // 4. applicare lo sconto in base all'età del passeggero
     if (etaPax < 18) {
-        sconto = (kmViaggio * 0.21) * 0.20
+        sconto = (kmViaggio * 0.21) * 0.20;
+        costoBiglietto -= sconto;
     } else if (etaPax > 65) {
-        sconto = (kmViaggio * 0.21) * 0.40
+        sconto = (kmViaggio * 0.21) * 0.40;
+        costoBiglietto -= sconto;
     }
-    // 5. applico lo sconto
-    costoBiglietto -= sconto;
-    console.log(costoBiglietto);
-    // 6. imposto solo 2 cifre dopo la virgola
+    // 5. imposto solo 2 cifre dopo la virgola
     costoBiglietto = costoBiglietto.toFixed(2)
-    // 7. mostra costo del biglietto nell'HTML
+    // 6. mostra costo del biglietto nell'HTML
     document.getElementById("your-price").innerHTML = "€ " + costoBiglietto;
 }
